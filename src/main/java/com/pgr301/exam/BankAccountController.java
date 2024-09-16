@@ -45,6 +45,7 @@ public class BankAccountController implements ApplicationListener<ApplicationRea
 
     @ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "video not found")
     public static class AccountNotFoundException extends RuntimeException {
+
     }
 }
 
