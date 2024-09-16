@@ -36,7 +36,7 @@ class ReallyShakyBankingCoreSystemService implements BankingCoreSystmeService {
 
     @Override
     public Account updateAccount(Account a) {
-        randomizedWait(2000);
+        randomizedWait(2000);s
         randomizeExceptionOrPanic(0.9f);
         Account account = getOrCreateAccount(a.getId());
         account.setBalance(a.getBalance());
